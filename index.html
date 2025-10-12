@@ -227,6 +227,7 @@
         border-bottom: 2px solid #B0BEC5;
         padding: 0.5rem;
         gap: 0.5rem;
+        flex-shrink: 0;
       }
       .sidebar h2 {
         width: 100%;
@@ -242,17 +243,20 @@
         flex-direction: column;
         flex: 1;
         overflow: hidden;
+        min-height: 0;
       }
       .right {
         width: 100%;
-        height: calc(100vh - 200px);
+        flex: 1;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
+        min-height: 0;
       }
       .content {
         height: auto;
-        min-height: calc(100vh - 200px);
+        min-height: auto;
         padding: 1rem;
+        overflow-y: visible;
       }
       .video-container {
         width: 100%;
@@ -268,6 +272,13 @@
       .event-card, .round {
         font-size: 1rem;
         padding: 0.8rem;
+        margin-bottom: 1rem;
+      }
+      .event-content {
+        overflow: visible;
+      }
+      .rounds {
+        margin-bottom: 1rem;
       }
       .content h2 {
         font-size: 1.5rem;
@@ -416,6 +427,9 @@
       <p><b>Faculty Coordinator:</b></p>
       <span>👤 Dr. Piyush Gupta</span>
       <span>👤 Mr. Santosh Kumar Sharma</span>
+      <p><b>Senior Coordinator:</b></p>
+      <span>👤 Harpreet Singh            <span class="phone-number">8384900013</span></span>
+      <span>👤 Sanchi Malhotra            <span class="phone-number">7300016373</span></span>
       <p><b>Student Coordinators:</b></p>
       <span>👤 Ashank Agrawal            <span class="phone-number">8209789396</span></span>
       <span>👤 Hiya Arya                 <span class="phone-number">9664006534</span></span>
@@ -473,17 +487,16 @@
     <div id="tag-line" class="content">
       <h2>Team Names And Tag Lines</h2>
       <ul>
-        <li><b> Dr. Gurminder Singh </b> Team Name: Quantum Coders | Tagline: "Breaking Limits, Building Futures"</li>
-        <li><b> Mr. PK Sharma </b> Team Name: Script Spartans | Tagline: "Conquering Bugs, One Line at a Time"</li>
-        <li><b> Mr. Subhash Chand Gupta </b> Team Name: Python Pioneers | Tagline: "Innovate, Automate, Dominate"</li>
-        <li><b> Mr. Santosh Kumar Agarwal </b> Team Name: Java Juggernauts | Tagline: "Powerful Code, Limitless Impact"</li>
-        <li><b> Mr. Santosh Sharma </b> Team Name: Ruby Renegades | Tagline: "Rewriting the Rules of Code"</li>
-        <li><b> Dr. Vivek Gaur </b> Team Name: Syntax Samurai | Tagline: "Precision in Every Command"</li>
-        <li><b> Mr. B Pathak </b> Team Name: Byte Busters | Tagline: "Smashing Errors, Delivering Perfection"</li>
-        <li><b> Mr. Puneet Sharma </b> Team Name: Logic Luminaries | Tagline: "Enlightening the Path of Innovation"</li>
-        <li><b> Dr. Seema Gaur </b> Team Name: Code Commandos | Tagline: "Silent, Swift, and Supreme"</li>
-        <li><b> Dr. Anju Sharma </b> Team Name: Data Mavericks | Tagline: "Defying Limits, Defining Data"</li>
-        <li><b> Dr. Jyoti Sharma</b> Team Name: Tech Trailblazers | Tagline: "Leading the Way in Innovation"</li>
+        <li><b> Mr. Vishambhar Pathak & Mr. Shubhash </b> Team Name: Logic Luminaries | Tagline: "Enlightening the Path of Innovation"</li>
+        <li><b> Mr. Puneet Sharma & Mr. Deepak Chaturvedi </b> Team Name: Code Commanders | Tagline: "Silent, Swift, and Supreme"</li>
+        <li><b> Mr. B. Pathak </b> Team Name: Data Mavericks | Tagline: "Defying Limits, Defining Data"</li>
+        <li><b> Dr. Gurminder Singh </b> Team Name: Code Trail | Tagline: "Leading the Way in Innovation"</li>
+        <li><b> Mr. Pankaj Sharma </b> Team Name: Quantum Coders | Tagline: "Breaking Limits, Building Futures"</li>
+        <li><b> Dr. Seema Gaur & Dr. Archana Bhatnagar </b> Team Name: Python Pioneers | Tagline: "Innovate, Automate, Dominate"</li>
+        <li><b> Mr. Santosh Sharma </b> Team Name: Java Jesters | Tagline: "Powerful Code, Limitless Impact"</li>
+        <li><b> Mr. Abhishek & Mr. Santosh Kumar Agarwal </b> Team Name: Ruby Renegades | Tagline: "Rewriting the Rules of Code"</li>
+        <li><b> Dr. Vivek Gaur & Mr. Madan Mohan Agarwal </b> Team Name: Syntax Samurai | Tagline: "Precision in Every Command"</li>
+        <li><b> Dr. Anju Sharma </b> Team Name: Byte Busters | Tagline: "Smashing Errors, Delivering Perfection"</li>
 
       </ul>
     </div>
